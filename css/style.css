@@ -68,6 +68,7 @@ body {
   color: #dcdcdc;
   /* padding: 3rem; */
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .container-fluid {
