@@ -244,7 +244,7 @@ footer span {
   margin-left: 25px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 90rem) {
   html {
     font-size: 52.5%;
   }
@@ -259,7 +259,7 @@ footer span {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 70rem) {
   html {
     font-size: 42.5%;
   }
@@ -268,7 +268,7 @@ footer span {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 60rem) {
   html {
     font-size: 32.5%;
   }
@@ -277,7 +277,7 @@ footer span {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 45rem) {
   html {
     font-size: 32.5%;
   }
