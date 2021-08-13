@@ -288,3 +288,15 @@ footer span {
     height: 75vh;
   }
 }
+
+@media (max-width: 37.5rem) {
+  html {
+    font-size: 32.5%;
+  }
+  .hero-text {
+    top: 43%;
+  }
+  .hero {
+    height: 75vh;
+  }
+}
