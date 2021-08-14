@@ -231,6 +231,10 @@ hr.line {
   transition-duration: 0.3s;
 }
 
+.socials {
+  width: 3rem;
+}
+
 footer {
   padding: 10px 0;
   background-color: black;
@@ -244,7 +248,7 @@ footer span {
   margin-left: 25px;
 }
 
-/* @media (max-width: 90rem) {
+@media (max-width: 85rem) {
   html {
     font-size: 52.5%;
   }
@@ -255,11 +259,15 @@ footer span {
   .jumbotron {
     margin: 2rem 5rem;
   }
-} */
+}
 
 @media (max-width: 70rem) {
   html {
     font-size: 42.5%;
+  }
+
+  hr.line {
+    width: 3.8rem;
   }
 
   .hero {
@@ -267,9 +275,13 @@ footer span {
   }
 }
 
-/* @media (max-width: 60rem) {
-  html {
+@media (max-width: 60rem) {
+  /* html {
     font-size: 32.5%;
+  } */
+
+  .skill {
+    width: 4.5rem;
   }
 
   .hero-text {
@@ -277,11 +289,11 @@ footer span {
   }
 }
 
-@media (max-width: 45rem) {
+/* @media (max-width: 45rem) {
   html {
     font-size: 32.5%;
   }
-}
+} */
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+/* @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
 } */
