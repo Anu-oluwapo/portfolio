@@ -287,6 +287,11 @@ footer span {
   .hero-text {
     margin-top: 450px;
   }
+
+  .container-fluid {
+    padding: 0;
+    width: 97%;
+  }
 }
 
 /* @media (max-width: 45rem) {
