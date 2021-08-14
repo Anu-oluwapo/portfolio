@@ -58,6 +58,8 @@ section {
   top: 0;
   opacity: 5%;
   text-align: right;
+  text-overflow: clip;
+  overflow: hidden;
 }
 
 body {
@@ -242,7 +244,7 @@ footer span {
   margin-left: 25px;
 }
 
-@media (max-width: 90rem) {
+/* @media (max-width: 90rem) {
   html {
     font-size: 52.5%;
   }
@@ -253,7 +255,7 @@ footer span {
   .jumbotron {
     margin: 2rem 5rem;
   }
-}
+} */
 
 @media (max-width: 70rem) {
   html {
@@ -265,7 +267,7 @@ footer span {
   }
 }
 
-@media (max-width: 60rem) {
+/* @media (max-width: 60rem) {
   html {
     font-size: 32.5%;
   }
@@ -281,12 +283,5 @@ footer span {
   }
 }
 
-@media (max-width: 41.4rem) {
-  html {
-    font-size: 32.5%;
-  }
-
-  .hero {
-    height: ;
-  }
-}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+} */
