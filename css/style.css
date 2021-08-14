@@ -83,7 +83,6 @@ body {
 }
 
 .hero {
-  height: 80rem;
 }
 
 hr.line {
@@ -273,9 +272,9 @@ footer span {
     width: 3rem;
   }
 
-  .hero {
+  /* .hero {
     height: 120rem;
-  }
+  } */
 }
 
 @media (max-width: 60rem) {
