@@ -199,7 +199,6 @@ hr.line {
 .contact-form {
   margin-top: 7rem;
   margin-bottom: 7rem;
-  margin-left: 13rem;
 }
 
 .text-box {
@@ -233,6 +232,10 @@ hr.line {
 
 .socials {
   width: 3rem;
+}
+
+form {
+  padding: 0 10%;
 }
 
 footer {
@@ -282,6 +285,10 @@ footer span {
 
   .skill {
     width: 4.5rem;
+  }
+
+  form {
+    padding: 0 0%;
   }
 
   .hero-text {
