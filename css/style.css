@@ -94,7 +94,7 @@ hr.line {
 }
 
 .btn-pt {
-  width: 20rem;
+  width: 15rem;
   height: 5rem;
   color: #dcdcdc;
   border: 0.2rem solid #dcdcdc;
@@ -110,7 +110,7 @@ hr.line {
 }
 
 .btn-txt {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .content {
@@ -264,7 +264,9 @@ footer span {
     width: 5.2rem;
   }
   .jumbotron {
-    margin: 2rem 5rem;
+    margin: 2rem 2rem;
+
+    padding: 5rem 2rem;
   }
 }
 
