@@ -73,7 +73,7 @@ body {
   overflow-x: hidden;
 }
 
-.wrapper{
+.wrapper {
   position: relative;
   overflow-x: hidden;
 }
@@ -156,6 +156,10 @@ hr.line {
   margin-top: 50rem;
 }
 
+.edu {
+  margin-top: 25rem;
+}
+
 .skill {
   width: 7rem;
 }
@@ -236,8 +240,32 @@ hr.line {
   transition-duration: 0.3s;
 }
 
+.text-box::placeholder {
+  color: #dcdcdc;
+}
+
+.p-links {
+  margin-top: 15rem;
+}
+
+.p-links a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #dcdcdc;
+}
+
 .socials {
   width: 3rem;
+}
+
+.p-links-m {
+  display: none;
+}
+
+.p-links-m a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #dcdcdc;
 }
 
 form {
@@ -302,6 +330,26 @@ footer span {
   .container-fluid {
     padding: 0;
     width: 95%;
+  }
+}
+
+@media (max-width: 575px) {
+  .p-links {
+    display: none;
+  }
+
+  .p-links-m {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .p-links-m a {
+    padding: 1.5rem;
+    margin: 0.5rem;
+  }
+
+  .p-links-m a:focus {
+    background-color: red;
   }
 }
 
