@@ -73,6 +73,11 @@ body {
   overflow-x: hidden;
 }
 
+.wrapper{
+  position: relative;
+  overflow-x: hidden;
+}
+
 .container-fluid {
   width: 90%;
 }
