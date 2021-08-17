@@ -10,6 +10,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="css/style.css">
@@ -21,11 +23,16 @@
     <section id="hero" class="hero container-fluid">
       <h4 class="logo">Anuoluwapo</h4>
       <div class="hero-imgs d-block mx-auto">
-        <img alt="image" class="hero-img-l d-block mx-auto" src="assets/images/herobh.png">
-        <img alt="image" class="hero-img d-block mx-auto" src="assets/images/Heromain.png">
-        <img alt="image" class="hero-img-r d-block mx-auto" src="assets/images/herobh2.png">
+        <div class=" hero-img-l animate__animated animate__fadeIn">
+          <img alt="image" class="hero-img-blur" src="assets/images/herobh.png">
+        </div>
+        <img alt="image" class="hero-img animate__animated animate__fadeIn" src="assets/images/Heromain.png">
+        <div class="hero-img-r animate__animated animate__fadeIn ">
+          <img alt="image" class="hero-img-blur" src="assets/images/herobh2.png">
+        </div>
       </div>
-      <h1 class="hero-text text-center">Hello 👋, I'm <b>ANUOLUWAPO</b><br>Im a <b>Front-end Web Developer</b>
+      <h1 class="hero-text text-center animate__animated animate__fadeIn">Hello 👋, I'm
+        <b>ANUOLUWAPO</b><br>Im a <b>Front-end Web Developer</b>
         <br><button class="btn btn-pt mt-5">
           <span class="btn-txt">Contact Me</span>
         </button>
@@ -40,7 +47,7 @@
           <hr class="line">
         </div>
 
-        <div class="col-8">
+        <div class="col-8 animate__animated animate__fadeIn about-me">
           <h3>
             < About Me>
           </h3>
@@ -75,7 +82,7 @@
         </div>
       </div>
 
-      <div class="row mt-5 pt-5">
+      <div class="row mt-5 pt-5 animate__animated animate__fadeIn">
         <div class="col-xl-4 col-6 row pb-5 mb-5">
           <div class="col-3"><img alt="image" class="skill" src="assets/images/html5.png"></div>
           <p class="col mt-3 mt-xs-1">HTML5</p>
@@ -379,7 +386,7 @@
                 <input type="text" class=" mx-auto form-control text-box mb-5" placeholder="Enter Name">
                 <input type="text" class="form-control text-box mb-5" placeholder="Enter Email">
                 <input type="text" class="form-control text-box mb-5" placeholder="Enter Subject">
-                <textarea placeholder="Describe yourself here..." class="form-control text-area" rows="10">
+                <textarea placeholder="Write Message here..." class="form-control text-area" rows="10">
             </textarea>
 
                 <button class="btn btn-pt mt-5 mb-5 mx-auto d-block">
