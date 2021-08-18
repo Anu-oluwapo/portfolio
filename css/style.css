@@ -185,6 +185,17 @@ hr.line {
   margin-bottom: 2rem;
 }
 
+.card-link img {
+  width: 2.5rem;
+  color: #dcdcdc;
+}
+
+.card-link img:hover {
+  transform: scale(1.15);
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+}
+
 .p2 {
   margin-top: -5rem;
 }
