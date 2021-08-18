@@ -196,6 +196,11 @@ hr.line {
   transition-duration: 0.2s;
 }
 
+.card-body img {
+  height: auto;
+  width: auto;
+}
+
 .p2 {
   margin-top: -5rem;
 }
@@ -211,6 +216,10 @@ hr.line {
   margin: 2rem 15rem;
   padding: 7rem;
   /* padding-bottom: 7rem; */
+}
+
+.company {
+  font-weight: bolder;
 }
 
 .quote {
