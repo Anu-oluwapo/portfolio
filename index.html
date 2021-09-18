@@ -14,7 +14,8 @@
 
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-  <link rel="stylesheet" href="css/style.css">
+
+
 
   <script src="css/wow.min.js"></script>
   <script>
@@ -32,8 +33,15 @@
 
 <body>
   <div id="app" class="wrapper">
+
+    <link v-if="lightmode === true" rel="stylesheet" href="css/lightstyle.css">
+    <link v-else rel="stylesheet" href="css/style.css">
+
     <section id="hero" class="hero container-fluid">
       <h4 class="logo">Anuoluwapo</h4>
+      <!-- <a @click="colorToggle()" style="float: right;"><button class="btn btn-pt mt-5">
+          <span class="btn-txt">Color Mode</span>
+        </button></a> -->
       <div class="hero-imgs d-block mx-auto">
         <div class=" hero-img-l animate__animated animate__fadeIn">
           <img alt="image" class="hero-img-blur" src="assets/images/herobh.png">
@@ -626,6 +634,7 @@
     el: "#app",
     data: {
       projectToggle: true,
+      lightmode: false,
     },
 
     methods: {
@@ -635,6 +644,10 @@
 
       toggleFalse() {
         this.projectToggle = false
+      },
+
+      colorToggle() {
+        this.lightmode = !this.lightmode
       }
 
     },
