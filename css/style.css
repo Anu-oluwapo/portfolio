@@ -175,7 +175,7 @@ hr.line {
   padding: 1.5rem;
 }
 
-.card a {
+.card a:not(.user-link){
   float: right;
   margin-left: 2rem;
 }
@@ -288,6 +288,14 @@ hr.line {
   font-size: 2rem;
   text-decoration: none;
   color: #dcdcdc;
+}
+
+.user-link{
+  text-decoration: none;
+  color: white;
+}
+.user-link:hover{
+  color: rgb(206, 206, 206);
 }
 
 form {

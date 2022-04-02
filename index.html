@@ -123,11 +123,6 @@
         </div>
 
         <div class="col-xl-4 col-6 row pb-5 mb-5">
-          <div class="col-3"><img alt="image" class="skill" src="assets/images/bootstrap.png"></div>
-          <p class="col mt-3 mt-md-0">Bootstrap</p>
-        </div>
-
-        <div class="col-xl-4 col-6 row pb-5 mb-5">
           <div class="col-3"><img alt="image" class="skill" src="assets/images/javascript.png"></div>
           <p class="col mt-3">Javascript</p>
         </div>
@@ -138,8 +133,20 @@
         </div>
 
         <div class="col-xl-4 col-6 row pb-5 mb-5">
-          <div class="col-3"><img alt="image" class="skill" src="assets/images/vuejs.png"></div>
+          <div class="col-3"><img alt="image" class="skill" src="assets/images/vuex.png"></div>
           <p class="col mt-3">VueX</p>
+        </div>
+
+
+        <div class="col-xl-4 col-6 row pb-5 mb-5">
+          <div class="col-3"><img alt="image" class="skill" src="assets/images/nuxt2.png"></div>
+          <p class="col mt-md-3 mt-0">Nuxt JS</p>
+        </div>
+
+
+        <div class="col-xl-4 col-6 row pb-5 mb-5">
+          <div class="col-3"><img alt="image" class="skill" src="assets/images/bootstrap.png"></div>
+          <p class="col mt-3 mt-md-0">Bootstrap</p>
         </div>
 
         <div class="col-xl-4 col-6 row pb-5 mb-5">
@@ -180,7 +187,7 @@
           <hr class="line">
         </div>
 
-        <div class="col-5 wow animate__animated animate__fadeIn">
+        <div class="col-12 col-md-5 wow animate__animated animate__fadeIn">
 
           <h3>
             < Experience>
@@ -216,15 +223,15 @@
 
           <br>
 
-          <h3>Software Developer (Jnr.) </h3>
+          <h3>Software (Front-end) Developer </h3>
           <span class="company">Consolidated Hallmark Insurance (2021 to Present)</span>
-          <p>Fresh after finishing from Middlesex University, I joined Consolidated Hallmark Insurance Plc As a Software 
-            Developer (Intern) which is where i currently work till date. I am responsible for the following <br>
+          <p>Fresh after finishing from Middlesex University, I joined Consolidated Hallmark Insurance Plc As a Software
+            Developer which is where i currently work till date. I am responsible for the following <br>
             - Development of web application User Interfaces for the
             organization and other external clients <br>
             - Development of Single page applications and
-            consuming Api's Using Vue.Js and VueX <br>
-            - Thorough Testing and Debugging  </p>
+            consuming Api's Using Vue.Js, VueX and Nuxt <br>
+            - Thorough Testing and Debugging </p>
 
           <br>
 
@@ -238,7 +245,7 @@
 
         </div>
 
-        <div class="col-5 edu wow animate__animated animate__fadeIn animate__delay-1s">
+        <div class="col-12 col-md-5 edu wow animate__animated animate__fadeIn">
           <div align="right" class="content row">
             <div class="row">
               <h3 class="col">
@@ -298,14 +305,14 @@
           <hr class="line">
 
           <div class="p-links">
-            <a v-if="projectToggle == true" class="text-dark btn btn-light" @click="toggleTrue()">Devs</a>
-            <a v-else class="btn btn-dark" @click="toggleTrue()">Devs</a>
+            <a v-if="projectToggle" class="text-dark btn btn-light" @click="toggleTrue()">Devs</a>
+            <a v-else class="btn btn-dark" @click="toggle(true)">Devs</a>
 
 
             <br><br>
 
-            <a v-if="projectToggle == false" class="text-dark btn btn-light" @click="toggleFalse()">Designs</a>
-            <a v-else class="btn btn-dark" @click="toggleFalse()">Designs</a>
+            <a v-if="!projectToggle" class="text-dark btn btn-light" @click="toggleFalse()">Designs</a>
+            <a v-else class="btn btn-dark" @click="toggle(false)">Designs</a>
           </div>
         </div>
 
@@ -315,20 +322,55 @@
           </h3>
 
           <div class="p-links-m text-center">
-            <a v-if="projectToggle == true" class="text-dark btn btn-light" @click="toggleTrue()">Devs</a>
-            <a v-else class="btn btn-dark" @click="toggleTrue()">Devs</a>
+            <a v-if="projectToggle" class="text-dark btn btn-light" @click="toggleTrue()">Devs</a>
+            <a v-else class="btn btn-dark" @click="toggle(true)">Devs</a>
 
-            <a v-if="projectToggle == false" class="text-dark btn btn-light" @click="toggleFalse()">Designs</a>
-            <a v-else class="btn btn-dark" @click="toggleFalse()">Designs</a>
+            <a v-if="!projectToggle" class="text-dark btn btn-light" @click="toggleFalse()">Designs</a>
+            <a v-else class="btn btn-dark" @click="toggle(false)">Designs</a>
           </div>
 
-          <div v-if="projectToggle == true" class="row wow animate__animated animate__fadeIn animate__delay-1s">
+          <div v-if="projectToggle" class="row wow animate__animated animate__fadeIn animate__delay-1s">
 
             <div class="col-sm-5 col-12 mb-5">
               <div class="card mt-5 ">
 
                 <div class="card-body">
                   <h5 class="card-subtitle mb-2 text-muted">Project 01 </h5>
+                  <h2 class="card-title">Tranzaqt (HTML / CSS / Javascript)</h2>
+                  <p class="card-text">A modern financial banking website landing page designed by <a target="_blank"
+                      class="user-link" href="https://twitter.com/femolaaa"> @femolaaa</a> and implemented by me.</p>
+                  <img alt="image" src="assets/images/tranzaqt.png">
+                  <a target="_blank" href="https://github.com/Anu-oluwapo/tranzaqt" class="card-link"><img class="mt-2"
+                      src="assets/images/gittt.png"></a>
+                  <a target="_blank" href="https://tranzaqt.netlify.app" class="card-link"><img class="mt-2"
+                      src="assets/images/eyee.png"></a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-sm-5 col-12 p2 wow animate__animated animate__fadeIn animate__delay-1s">
+              <div class="card mt-5 ">
+                <div class="card-body">
+                  <h5 class="card-subtitle mb-2 text-muted">Project 02 </h5>
+                  <h2 class="card-title">Niffty NFT Marketplace (HTML / CSS)</h2>
+                  <p class="card-text">A freestyle NFT web project designed by<a target="_blank" class="user-link"
+                      href="https://twitter.com/femolaaa"> @femolaaa</a> and coded by myself
+                  </p>
+                  <img alt="image" src="assets/images/niffty.png">
+                  <a target="_blank" href="https://github.com/Anu-oluwapo/Niffty" class="card-link"><img class="mt-2"
+                      src="assets/images/gittt.png"></a>
+                  <a target="_blank" href="https://nifftyng.netlify.app/" class="card-link"><img class="mt-2"
+                      src="assets/images/eyee.png"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-5 col-12 mb-5">
+              <div class="card mt-5 ">
+
+                <div class="card-body">
+                  <h5 class="card-subtitle mb-2 text-muted">Project 03 </h5>
                   <h2 class="card-title">Panda (HTML / CSS / Bootstrap)</h2>
                   <p class="card-text">A freestyle website designed by a friend and being implemented by me (work in
                     progress)</p>
@@ -344,26 +386,12 @@
 
             <div class="col-sm-5 col-12 p2 wow animate__animated animate__fadeIn animate__delay-1s">
               <div class="card mt-5 ">
-                <div class="card-body">
-                  <h5 class="card-subtitle mb-2 text-muted">Project 02 </h5>
-                  <h2 class="card-title">Design Tutorials (HTML / CSS)</h2>
-                  <p class="card-text">A freestyle dashboard web design designed and coded by myself for personal
-                    development</p>
-                  <img alt="image" src="assets/images/designtuts.png">
-                  <a target="_blank" href="https://github.com/Anu-oluwapo/DesignTuts" class="card-link"><img
-                      class="mt-2" src="assets/images/gittt.png"></a>
-                  <a target="_blank" href="https://designtutorials.netlify.app/" class="card-link"><img class="mt-2"
-                      src="assets/images/eyee.png"></a>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-sm-5 col-12 mb-5">
-              <div class="card mt-5 ">
                 <div class="card-body">
-                  <h5 class="card-subtitle mb-2 text-muted">Project 03</h5>
+                  <h5 class="card-subtitle mb-2 text-muted">Project 04</h5>
                   <h2 class="card-title">My Portfolio (HTML / CSS / VueJS)</h2>
-                  <p class="card-text">My portfolio website created to show my work</p>
+                  <p class="card-text">My personal project portfolio website designed and developed by myself to
+                    showcase my work</p>
                   <img alt="image" src="assets/images/portfolio.png">
                   <a target="_blank" href="https://github.com/Anu-oluwapo/portfolio" class="card-link"><img class="mt-2"
                       src="assets/images/gittt.png"></a>
@@ -371,15 +399,14 @@
                       src="assets/images/eyee.png"></a>
                 </div>
               </div>
-
-
             </div>
 
-            <div class="col-sm-5 col-12 p2 wow animate__animated animate__fadeIn animate__delay-1s">
+            <div class="col-sm-5 col-12 mb-5">
+              <div class="card mt-5 ">
 
-              <div class="card mt-5">
+
                 <div class="card-body">
-                  <h5 class="card-subtitle mb-2 text-muted">Project 04</h5>
+                  <h5 class="card-subtitle mb-2 text-muted">Project 05</h5>
                   <h2 class="card-title">Fixit NG (VueJS)</h2>
                   <p class="card-text">A web application for people to request a fix or diagnosis for their damaged
                     gadgets. (My final year Project)</p>
@@ -389,13 +416,37 @@
                   <a target="_blank" href="https://fixitng.netlify.app/" class="card-link"><img class="mt-2"
                       src="assets/images/eyee.png"></a>
                 </div>
+
+
+              </div>
+
+
+            </div>
+
+            <div class="col-sm-5 col-12 p2 wow animate__animated animate__fadeIn animate__delay-1s">
+
+              <div class="card mt-5">
+
+                <div class="card-body">
+                  <h5 class="card-subtitle mb-2 text-muted">Project 06 </h5>
+                  <h2 class="card-title">Design Tutorials (HTML / CSS)</h2>
+                  <p class="card-text">A freestyle dashboard web design designed and coded by myself for personal
+                    development</p>
+                  <img alt="image" src="assets/images/designtuts.png">
+                  <a target="_blank" href="https://github.com/Anu-oluwapo/DesignTuts" class="card-link"><img
+                      class="mt-2" src="assets/images/gittt.png"></a>
+                  <a target="_blank" href="https://designtutorials.netlify.app/" class="card-link"><img class="mt-2"
+                      src="assets/images/eyee.png"></a>
+                </div>
+
+
               </div>
 
             </div>
 
 
 
-            <div class="col-sm-5 col-12 mb-5">
+            <!-- <div class="col-sm-5 col-12 mb-5">
               <div class="card mt-5 ">
                 <div class="card-body">
                   <h5 class="card-subtitle mb-2 text-muted">Project 05</h5>
@@ -427,7 +478,7 @@
                 </div>
               </div>
 
-            </div>
+            </div> -->
           </div>
 
           <div class="row wow animate__animated animate__fadeIn" v-else>
@@ -643,7 +694,7 @@
 
 
   <footer class="text-center">
-    <span> &copy; 2021 </span>
+    <span> &copy; <a target="_blank" class="user-link" href="https://twitter.com/itz___anu">Anuoluwapo 2022</a> </span>
   </footer>
   </div>
 </body>
@@ -657,12 +708,8 @@
     },
 
     methods: {
-      toggleTrue() {
-        this.projectToggle = true
-      },
-
-      toggleFalse() {
-        this.projectToggle = false
+      toggle(data) {
+        this.projectToggle = data
       },
 
       colorToggle() {
